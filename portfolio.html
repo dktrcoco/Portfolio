@@ -3,18 +3,21 @@
 
 <head>
 
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
   <title>Christopher George Kabana PhD Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <style>
-    h1 {
+    /* h1 {
       color: blue;
       font-family: Arial, Helvetica, sans-serif;
-      font-size:300%;
-    }
+      font-size: 300%;
+    } */
+
     .container {
       margin-bottom: 70px;
     }
+
     .footer {
       position: fixed;
       left: 0;
@@ -29,71 +32,107 @@
 
 <body>
   <header>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="index.html">Christopher George Kabana PhD</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html">Christopher George Kabana PhD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="active"><a href="index.html">About &nbsp; <span class="sr-only">(current)</span></a></li>
-        <li class="active"><a href="contact.html">Contact &nbsp; <span class="sr-only">(current)</span></a></li>
-        <li class="active"><a href="portfolio.html">Portfolio &nbsp; <span class="sr-only">(current)</span></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Our rows function in containers (grid created). -->
-  <div class="container">
-
-    <!-- Our columns function in rows. -->
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Portfolio</h1>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="active"><a href="index.html">About &nbsp; <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="contact.html">Contact &nbsp; <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="portfolio.html">Portfolio &nbsp; <span class="sr-only">(current)</span></a></li>
+        </ul>
       </div>
-      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
-    </div>
+    </nav>
 
-    <div class="row">
+    <!-- Our rows function in containers (grid created). -->
+    <div class="container">
+
+      <!-- Our columns function in rows. -->
+      <div class="row">
         <div class="col-md-12">
-            <p>My portfolio is a work in progress since I am a novice web developer. I'm working on my skills and it's 
-                exciting how it's going so far. Pictured below are a few examples of things I enjoy doing and I consider 
-                defining of me. Enjoy!</p>
+          <h1 class="port">Portfolio</h1>
         </div>
-    </div>
-<!-- for images, type src="assets/images/filename.png" -->
-    <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <img src="Assets/Images/ChemPic.jpg" alt="Picture of me (right) illustrating a chemistry demonstration.">
-            <h6>Picture of me from undergrad demonstrating how different alkalis create different colored flames.</h6>
-          </div>
-
-        <div class="col-md-6 col-xs-12">
-        <img src="Assets/Images/GradPic.jpg" alt="Image of me graduating with my PhD in Chemistry.">
-        <h6>Picture of me graduating with my PhD in Chemistry from Duquesne University.</h6>
+        <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
       </div>
-   </div>
 
-    <div class="row">
+      <div class="row">
+        <div class="col-md-12">
+          <p>My portfolio is a work in progress since I am a novice web developer. I'm working on my skills and it's
+            exciting how it's going so far. Pictured below are a few examples of things I enjoy doing and I consider
+            defining of me. Enjoy!</p>
+
+          <p>Update 20200821: Added a group project and a solo project for a couple examples of my work.</p>
+        </div>
+      </div>
+      <!-- for images, type src="assets/images/filename.png" -->
+      <div class="row">
+        <div id="medCol" class="col-md-6 col-xs-12 column">
+          <img class="image" src="Assets/Images/Meds.jpg" alt="Med Tracker">
+          <h6 class="imageText"></h6>
+        </div>
         <div class="col-md-6 col-xs-12">
-            <img src="Assets/Images/RballPic.jpg" alt="Rainbow Lake Outdoor Courts" width="500" height="333">
-            <h6>Picture of outdoor racquetball courts off Lake Michigan in Chicago.</h6>
+          <div class="medDescription">
+            <h5>Med-Tracker</h5>
+            <h6>Description: User submits medication, app returns FDA usage, warnings, and reported side effeccts.</h6>
+            <div>
+              <a class="button" href="https://github.com/dktrcoco/MedTracker">Check it out!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="weatherCol" class="col-md-6 col-xs-12 column">
+          <img class="image" src="Assets/Images/Forecast.jpg" alt="Weather Forecast">
+          <h6 class="imageText">Weather Dashboard</h6>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="medDescription">
+            <h5>Weather Dashboard</h5>
+            <h6>Description: User submits city, returns current and 5-day forecast.</h6>
+            <div>
+              <a class="button" href="https://github.com/dktrcoco/Weather-Dashboard">Check it out!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <img src="Assets/Images/ChemPic.jpg" alt="Picture of me (right) illustrating a chemistry demonstration.">
+          <h6>Picture of me from undergrad demonstrating how different alkalis create different colored flames.</h6>
         </div>
 
         <div class="col-md-6 col-xs-12">
-            <img src="Assets/Images/ActionPic.jpg" alt="PA State Racquetball Tournament Action Shot" width="500" height="333">
-            <h6>Action shot during a racquetball match at the PA State Tournament.</h6>
+          <img src="Assets/Images/GradPic.jpg" alt="Image of me graduating with my PhD in Chemistry.">
+          <h6>Picture of me graduating with my PhD in Chemistry from Duquesne University.</h6>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <img src="Assets/Images/RballPic.jpg" alt="Rainbow Lake Outdoor Courts" width="500" height="333">
+          <h6>Picture of outdoor racquetball courts off Lake Michigan in Chicago.</h6>
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+          <img src="Assets/Images/ActionPic.jpg" alt="PA State Racquetball Tournament Action Shot" width="500"
+            height="333">
+          <h6>Action shot during a racquetball match at the PA State Tournament.</h6>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <footer class="card-footer footer-font-style text-muted footer-position"><p>Brought to you by Chris 2020</p></footer>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/boottstrap.min.js"></script>
+    <div class="footer">
+      <footer class="card-footer footer-font-style text-muted footer-position">
+        <p>Brought to you by Chris 2020</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/boottstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
