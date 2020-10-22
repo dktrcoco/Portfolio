@@ -1,7 +1,14 @@
-function medLink() {
-    //on click of button takes user to Med-Tracker repo
-}
+//code to set up collapsible sections in About Me page
+var coll = document.getElementsByClassName("collapsible");
 
-function weatherLink() {
-    
-}
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+};

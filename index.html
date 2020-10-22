@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 
+  <!-- Font Awesome Icons -->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -23,6 +29,12 @@
           <li><a href="index.html">About </a></li>
           <li><a href="contact.html">Contact </a></li>
           <li><a href="portfolio.html">Portfolio </a></li>
+          <li> <a class="social-icon linked" href="https://www.linkedin.com/in/christopherkabana" target="_blank"><i
+                class="fab fa-linkedin-in"></i><span class="linkedText">LinkedIn Profile</span></a></li>
+          <li><a class="social-icon git" href="https://github.com/dktrcoco" target="_blank"><i
+                class="fab fa-github"></i><span class="gitText">GitHub Profile</span></a></li>
+          <li><a class="resume" href="resume.html" target="_blank"><i class="fas fa-file"></i><span
+                class="resumeText">Resume</span></a></li>
         </ul>
       </div>
     </nav>
@@ -32,46 +44,52 @@
 
     <div class="row">
 
-      <div class="col-md-6 col-xs-12">
-        <h1>About Me</h1>
-        <h2>General</h2>
-
-        <p>My name is Chris. I live in Chicago. I'm left handed and proud of it. My academic and professional career up
-          to this point has been focused on chemistry;
-          specifically organic chemistry and the chemistry of what goes on during jet fuel oxidation. This pandemic has
-          changed a lot,
-          including my life. I am now looking at developing my skills as a coder/web developer.</p>
-        <h2>Hobbies</h2>
-
-        <p>I enjoy cooking for me and my wife. It's fun to try new recipes! I love traveling: my wife and I have been to
-          Ireland,
-          Australia, and Hawaii (as well as other less exciting domestic locations). I love playing racquetball. I have
-          played many times
-          in the state tournaments in PA and IL. I like to work out, both strength training as well as things like
-          Pilates. I'm also an avid
-          gamer (PC, PS, Nintendo). My favorite game for each is probably WoW, Horizon: Zero Dawn, and Breath of the
-          Wild, respectively.</p>
-      </div>
-      <div class="col-md-6 col-xs-12">
-        <img src="Assets/Images/HawaiiPic.jpg" alt="Picture of me from Hawaii." width="500" height="433">
-      </div>
-
-    </div>
-    <div class="row">
-
       <div class="col-md-12 col-xs-12">
+        <h1>About Me</h1>
 
-        <h2>Books/Movies</h2>
+        <div class="col-md-12 col-xs-12">
+          <img class="responsive" src="Assets/Images/HawaiiPic.jpg" alt="Picture of me from Hawaii." width="500"
+            height="433">
+        </div>
+        <br>
+        <div class="col-md-12 col-xs-12">
+          <button type="button" class="collapsible">General</button>
+          <div class="content">
+            <p class="para">My name is Chris Kabana. I live in Chicago. I'm left handed and proud of it. My academic and
+              professional career up to this point has been focused on chemistry; specifically organic chemistry and the
+              chemistry of what goes on during jet fuel oxidation. This pandemic has changed a lot, including my life.
+              I am now working on developing my skills as a Full Stack Web Developer.</p>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12 col-xs-12">
+          <button type="button" class="collapsible">Hobbies</button>
+          <div class="content">
+            <p class="para">I enjoy cooking for me and my wife. It's fun to try new recipes! I love traveling: my wife
+              and I have been to Ireland, Australia, and Hawaii (as well as other less exciting domestic locations).
+              I love playing racquetball. I have played many times in the state tournaments in PA and IL. I like to work
+              out, both strength training as well as things like Pilates. I'm also an avid gamer (PC, PS, Nintendo).
+              My favorite game for each is probably WoW, Horizon: Zero Dawn, and Breath of the Wild, respectively.</p>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12 col-xs-12">
+          <button type="button" class="collapsible">Books/Movies</button>
+          <div class="content">
+            <p class="para">I love reading. Some of my favorites are in the fantasy genre, such as Lord of the Rings,
+              Harry
+              Potter, The Wheel of Time, Game of Thrones, anything by Brandon Sanderson, The Harry Dresden Files. I also
+              love
+              just about anything by Stephen King. As far as movies go, I love The Matrix (yes, even the sequels), The
+              Martian
+              (the book too!), Lord of the Rings, the MCU, Star Wars. The magic of the internet has blurred the line
+              between
+              movies and TV so I'll list my favorite shows as well. Game of Thrones, Westworld, The Simpsons, Rick and
+              Morty,
+              Breaking Bad.</p>
+          </div>
 
-        <p>I love reading. Some of my favorites are in the fantasy genre, such as Lord of the Rings, Harry Potter, The
-          Wheel of Time, Game of Thrones,
-          anything by Brandon Sanderson, The Harry Dresden Files. I also love just about anything by Stephen King. As
-          far as movies go, I love The Matrix (yes, even the sequels), The Martian (the book too!), Lord of the Rings,
-          the MCU, Star Wars. The magic
-          of the internet has blurred the line between movies and TV so I'll list my favorite shows as well. Game of
-          Thrones, Westworld, The Simpsons,
-          Rick and Morty, Breaking Bad.</p>
-
+        </div>
       </div>
     </div>
   </div>
@@ -85,6 +103,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
 
 </body>
 

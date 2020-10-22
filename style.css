@@ -1,6 +1,61 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./Assets/Images/background.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.para {
+text-align: justify;
+text-justify: inter-word;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: black;
+    text-align: left;
+    outline: black;
+    outline-width: 5px;
+    font-size: 30px;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.dev-icons {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .list-inline-item {
+    display: inline-block;
+  }
+  .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 
 ul {
     list-style-type: none;
@@ -16,9 +71,305 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+.linked .git {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
+
+.linked .linkedText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.linked:hover .linkedText {
+    visibility: visible;
+}
+
+.resumeText {
+    font-size: 10px;
+}
+
+.gitText {
+    font-size: 10px;
+}
+
+.resume .resumeText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;  
+}
+
+.resume:hover .resumeText {
+    visibility: visible;
+}
+
+.git .gitText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.git:hover .gitText {
+    visibility: visible;
+}
+
+.html5Text {
+    font-size: 15px;
+}
+
+.html5 .html5Text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.html5:hover .html5Text {
+visibility: visible;
+}
+
+.css3Text {
+    font-size: 15px;
+}
+
+.css3 .css3Text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.css3:hover .css3Text {
+visibility: visible;
+}
+
+.jsText {
+    font-size: 15px;
+}
+
+.js .jsText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.js:hover .jsText {
+visibility: visible;
+}
+
+.nodeText {
+    font-size: 15px;
+}
+
+.node .nodeText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.node:hover .nodeText {
+visibility: visible;
+}
+
+.npmText {
+    font-size: 15px;
+}
+
+.npm .npmText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.npm:hover .npmText {
+visibility: visible;
+}
+
+.mySqlText {
+    font-size: 15px;
+}
+
+.mySql .mySqlText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.mySql:hover .mySqlText {
+visibility: visible;
+}
+
+.sequelizeText {
+    font-size: 15px;
+}
+
+.sequelize .sequelizeText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.sequelize:hover .sequelizeText {
+visibility: visible;
+}
+
+.mongoDBText {
+    font-size: 15px;
+}
+
+.mongoDB .mongoDBText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.mongoDB:hover .mongoDBText {
+visibility: visible;
+}
+
+.expressText {
+    font-size: 15px;
+}
+
+.express .expressText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.express:hover .expressText {
+visibility: visible;
+}
+
+.handlebarsText {
+    font-size: 15px;
+}
+
+.handlebars .handlebarsText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.handlebars:hover .handlebarsText {
+visibility: visible;
+}
+
+.bootstrapText {
+    font-size: 15px;
+}
+
+.bootstrap .bootstrapText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.bootstrap:hover .bootstrapText {
+visibility: visible;
+}
+
+/* li a:hover {
+    background-color: #111;
+} */
 
 .portfolio {
     position: relative;
@@ -48,8 +399,18 @@ li a:hover {
     color: rgba(255,255,255,.5);
 }
 
+/* .navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 100;
+    width: 100%;
+    background-color: #333;
+} */
+
 .container {
     margin-bottom: 70px;
+    margin-top: 30px;
+    
   }
   .footer {
     position: fixed;
