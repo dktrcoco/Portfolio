@@ -6,6 +6,15 @@ body {
     background-size: cover;
 }
 
+.email {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.cell {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
 .responsive {
     width: 100%;
     height: auto;
@@ -393,6 +402,7 @@ visibility: visible;
 .image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .navbar-dark .navbar-nav .nav-link {
